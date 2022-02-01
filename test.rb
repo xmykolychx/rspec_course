@@ -1,1 +1,30 @@
-puts "hello"
+# RSpec.describe 'math calculations' do
+#   it 'does basic math' do
+#     a, b = 3, 5
+#     expect(a + b).to eq(8)
+#     expect(a * b).to eq(15)
+#     expect((a*2) - b).to eq(1)
+#     expect(b - a).to eq(2)
+#   end
+# end
+#
+#
+# class School
+#   attr_accessor :name, :students
+#
+#   def initialize(name)
+#     @name = name
+#     @students = []
+#   end
+# end
+# RSpec.describe School do
+#   it 'has a name' do
+#     school = School.new('Beverly Hills High School')
+#     expect(school.name).to eq('Beverly Hills High School')
+#   end
+#
+#   it 'should start off with no students' do
+#     school = School.new('Notre Dame High School')
+#     expect(school.students).to eq([])
+#   end
+# end
