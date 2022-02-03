@@ -21,6 +21,9 @@ PLATFORMS
 
 DEPENDENCIES
   rspec
+  rspec-core
+  rspec-expectations
+  rspec-mocks
 
 BUNDLED WITH
    2.3.5
