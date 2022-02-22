@@ -28,3 +28,84 @@
 #     expect(school.students).to eq([])
 #   end
 # end
+#
+# class Car
+#   attr_accessor :fuel_level
+#
+#   def initialize(fuel)
+#     @fuel_level = fuel
+#   end
+#
+#   def fill_up(pump)
+#     @fuel_level = pump.dispense_fuel
+#   end
+# end
+#
+# class Pump
+#   def dispence_fuel
+#     100
+#   end
+# end
+#
+# class Calculator
+#   attr_accessor :n1, :n2
+#
+#   def initialize(n1, n2)
+#     @n1 = n1
+#     @n2 = n2
+#   end
+#
+#   def calc(op)
+#     if op == '+'
+#       add
+#     elsif op == '-'
+#       subt
+#     elsif op == '*'
+#       mul
+#     elsif op == '/'
+#       div
+#     else
+#       'not valid operator'
+#     end
+#   end
+#
+#   def add
+#     @n1 + @n2
+#   end
+#
+#   def subt
+#     @n1 - @n2
+#   end
+#
+#   def mul
+#     @n1 * @n2
+#   end
+#
+#   def div
+#     @n1 / @n2
+#   end
+# end
+class Human
+  attr_accessor :name, :age
+
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+end
+
+class Employee < Human
+  attr_accessor :salary
+  
+  def initialize(name, age)
+    super(name, age)
+  end
+  
+  def receive_annual_salary(salary)
+    annual_salary = salary * 12
+    annual_salary
+  end
+end
+
+e = Employee.new('john', 25)
+p e.receive_annual_salary(2000)
